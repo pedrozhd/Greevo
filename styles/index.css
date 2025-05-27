@@ -331,7 +331,7 @@
 
         /* Component Styles */
         /* Emergency Banner */
-        .emergency-banner {
+        .banner-emergência {
             background-color: #dc2626;
             color: white;
             padding: 0.5rem 1rem;
@@ -345,6 +345,7 @@
             position: sticky;
             top: 0;
             z-index: 50;
+            padding: 16px;
         }
 
         .nav-logo {
