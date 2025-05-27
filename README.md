@@ -11,9 +11,7 @@
 **Solução**: A **Greevo** é um **software de geolocalização** que:
 
 ✅ **Identifica abrigos oficiais/comunitários** já existentes.
-
 ✅ **Direciona afetados** via GPS e rotas seguras.
-
 ✅ **Integra-se a sistemas de alerta** (Defesa Civil, ONGs, governos).
 
 > *(Não construímos abrigos – tornamos os existentes visíveis!)*
