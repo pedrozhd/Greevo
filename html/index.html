@@ -1,185 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greevo | Soluções para desastres naturais</title>
     <link rel="stylesheet" href="/styles/index.css">
 </head>
+
 <body>
     <!-- Emergency Banner -->
-    <div class="banner-emergência">
-        <div class="container flex justify-between items-center">
-            <div class="flex items-center">
-                <i class="triângulo-exclamação"></i>
-                <span class="font-semibold">SISTEMA DE ALERTA DE EMERGÊNCIA</span>
-            </div>
-            <a href="#emergency" class="underline hover:no-underline">Ver alertas ativos</a>
+    <div class="banner-emergencia">
+        <div class="mensagem-emergencia">
+            <i></i>
+            <h2>Alerta do sistema de emergência</h2>
+        </div>
+        <div class="link-emergencia">
+            <a href="">Veja alertas ativos</a>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav>
-        <div class="container px-4 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <i class="greevo-logo"></i>
-                       <!-- <img src="../assets/greevo-logo.png" alt=""> -->
-                    <span class="nav-logo">GREEVO</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-blue-800">Home</a>
-                    <a href="#solutions" class="nav-link">Solutions</a>
-                    <a href="#resources" class="nav-link">Resources</a>
-                    <a href="#alerts" class="nav-link">Alerts</a>
-                    <a href="#about" class="nav-link">About</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-2 pb-2">
-                <a href="#home" class="block py-2 nav-link">Home</a>
-                <a href="#solutions" class="block py-2 nav-link">Solutions</a>
-                <a href="#resources" class="block py-2 nav-link">Resources</a>
-                <a href="#alerts" class="block py-2 nav-link">Alerts</a>
-                <a href="#about" class="block py-2 nav-link">About</a>
-            </div>
+    <nav class="container-menu">
+        <div class="menu-logo">
+            <img src="../assets/greevo-logo-sem-fundo.png" alt="Greevo">
         </div>
+        <div class="menu-link">
+            <ul class="menu-lista">
+                <li><a href="">Home</a></li>
+                <li><a href="">Solução</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Alerts</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+       
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient text-white hero-section">
-        <div class="container px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="hero-title">Protegendo comunidades contra desastres naturais</h1>
-                    <p class="hero-description">Soluções abrangentes para prevenção, preparação e recuperação dos eventos mais devastadores da natureza.</p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#solutions" class="hero-button-primary">
-                            Explore Solutions
-                        </a>
-                        <a href="#emergency" class="hero-button-secondary">
-                            Emergency Resources
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Disaster Response Team" class="rounded-xl shadow-2xl max-w-full h-auto">
-                </div>
+    <section class="container-home">
+        <div class="home-texto">
+            <h1>Protegendo Comunidades dos desastres naturais</h1>
+            <p>Soluções abrangentes para prevenção, preparação e recuperação dos eventos mais devastadores da natureza</p>
+            <div class="home-btn">
+                <button>Explore Soluções</button>
+                <button>Recursos emergenciais</button>
             </div>
         </div>
+        <img src="../assets/Imagem_Agricultor.avif" alt="">
+       
     </section>
 
     <!-- Stats Section -->
-    <section class="bg-gray-100 stats-section">
-        <div class="container px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-                <div class="stats-counter stat-card">
-                    <div class="stat-number">250M+</div>
-                    <div class="stat-label">People affected annually</div>
-                </div>
-                <div class="stats-counter stat-card">
-                    <div class="stat-number">$210B</div>
-                    <div class="stat-label">Global economic losses</div>
-                </div>
-                <div class="stats-counter stat-card">
-                    <div class="stat-number">90%</div>
-                    <div class="stat-label">Of disasters are weather-related</div>
-                </div>
-                <div class="stats-counter stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Monitoring & alert systems</div>
-                </div>
-            </div>
+    <section class="container-estatistica">
+        <div class="estatistica-item">
+            <h3>250</h3>
+            <p>Pessoas afetadas anualmente</p>
+        </div>
+        <div class="estatistica-item">
+            <h3>210</h3>
+            <p>Perdas econômicas globais</p>
+        </div>
+        <div class="estatistica-item">
+            <h3>90</h3>
+            <p>Dos desastres estão relacionados ao clima</p>
+        </div>
+        <div class="estatistica-item">
+            <h3>247</h3>
+            <p>Monitoring & alert systems</p>
         </div>
     </section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="py-20 bg-white">
-        <div class="container px-4">
-            <div class="text-center mb-16">
-                <h2 class="section-title">Our Comprehensive Solutions</h2>
-                <p class="section-description">From early warning systems to resilient infrastructure, we provide end-to-end disaster management solutions.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Solution Card 1 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-blue-100">
-                        <i class="solution-card-icon fas fa-satellite-dish text-blue-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Early Warning Systems</h3>
-                        <p class="solution-card-description">Advanced monitoring and alert systems that provide critical lead time before disasters strike.</p>
-                        <a href="#" class="solution-card-link text-blue-600">Learn more →</a>
-                    </div>
-                </div>
-                
-                <!-- Solution Card 2 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-green-100">
-                        <i class="solution-card-icon fas fa-home text-green-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Resilient Infrastructure</h3>
-                        <p class="solution-card-description">Engineering solutions to build structures that can withstand extreme natural events.</p>
-                        <a href="#" class="solution-card-link text-green-600">Learn more →</a>
-                    </div>
-                </div>
-                
-                <!-- Solution Card 3 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-purple-100">
-                        <i class="solution-card-icon fas fa-users text-purple-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Community Preparedness</h3>
-                        <p class="solution-card-description">Training programs and resources to empower communities to respond effectively.</p>
-                        <a href="#" class="solution-card-link text-purple-600">Learn more →</a>
-                    </div>
-                </div>
-                
-                <!-- Solution Card 4 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-yellow-100">
-                        <i class="solution-card-icon fas fa-leaf text-yellow-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Ecosystem Restoration</h3>
-                        <p class="solution-card-description">Natural solutions like mangrove restoration to mitigate flood and storm impacts.</p>
-                        <a href="#" class="solution-card-link text-yellow-600">Learn more →</a>
-                    </div>
-                </div>
-                
-                <!-- Solution Card 5 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-red-100">
-                        <i class="solution-card-icon fas fa-ambulance text-red-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Emergency Response</h3>
-                        <p class="solution-card-description">Rapid deployment teams and logistics for immediate post-disaster assistance.</p>
-                        <a href="#" class="solution-card-link text-red-600">Learn more →</a>
-                    </div>
-                </div>
-                
-                <!-- Solution Card 6 -->
-                <div class="disaster-card solution-card">
-                    <div class="solution-card-icon-container bg-indigo-100">
-                        <i class="solution-card-icon fas fa-chart-line text-indigo-600"></i>
-                    </div>
-                    <div class="solution-card-content">
-                        <h3 class="solution-card-title">Risk Assessment</h3>
-                        <p class="solution-card-description">Advanced analytics to identify vulnerabilities and prioritize mitigation efforts.</p>
-                        <a href="#" class="solution-card-link text-indigo-600">Learn more →</a>
-                    </div>
-                </div>
+    <section class="container-solucao">
+        <div class="solucao-texto">
+            <h1>Soluções abrangentes</h1>
+            <p>Desde sistemas de alerta precoce até infraestrutura resiliente, fornecemos soluções completas de gerenciamento de desastres.</p>
+        </div>
+
+
+    <div class="solucao-card">
+
+        <div class="card-1">
+            <div><img src="../assets/casa-icon.png" alt=""></div>
+            <div>
+                <h3>Infraestrutura resiliente</h3>
+                <p>Soluções de engenharia para construir estruturas que possam resistir a eventos naturais extremos.</p>
+                <a href=""></a>
             </div>
         </div>
+
+        <div class="card-2">
+            <div><img src="../assets/satelite-icon.png" alt=""></div>
+            <div>
+                <h3>Sistemas de Alerta Antecipado</h3>
+                <p>Sistemas avançados de monitoramento e alerta que proporcionam tempo crítico antes da ocorrência de desastres.</p>
+                <a href=""></a>
+            </div>
+        </div>
+
+        <div class="card-3">
+            <div><img src="../assets/comunidade-icon.png" alt=""></div>
+            <div>
+                <h3>Comunidades Preparadas</h3>
+                <p>Programas de treinamento e recursos para capacitar as comunidades a responder de forma eficaz.</p>
+                <a href=""></a>
+            </div>
+        </div>
+
+        <div class="card-4">
+            <div><img src="../assets/assistente-icon.png" alt=""></div>
+            <div>
+                <h3>Greevo Assistente</h3>
+                <p>Assistente focado em sanar dúvidas em tempo real</p>
+                <a href=""></a>
+            </div>
+        </div>
+
+    </div>
+
+
+        
+
+        
     </section>
 
     <!-- Disaster Types Section -->
@@ -187,9 +130,10 @@
         <div class="container px-4">
             <div class="text-center mb-16">
                 <h2 class="section-title">Disaster Types We Address</h2>
-                <p class="section-description">Specialized solutions tailored to different natural disaster scenarios.</p>
+                <p class="section-description">Specialized solutions tailored to different natural disaster scenarios.
+                </p>
             </div>
-            
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Disaster Type 1 -->
                 <div class="disaster-type-card">
@@ -201,7 +145,7 @@
                         <p class="disaster-type-description">Early warning, flood barriers, drainage solutions</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 2 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-red-100">
@@ -212,7 +156,7 @@
                         <p class="disaster-type-description">Detection systems, firebreaks, community plans</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 3 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-yellow-100">
@@ -223,7 +167,7 @@
                         <p class="disaster-type-description">Storm tracking, reinforced shelters, evacuation</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 4 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-gray-100">
@@ -234,7 +178,7 @@
                         <p class="disaster-type-description">Seismic retrofitting, early warning, response training</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 5 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-green-100">
@@ -245,18 +189,18 @@
                         <p class="disaster-type-description">Water conservation, irrigation tech, early warning</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 6 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-purple-100">
                         <i class="disaster-type-icon fas fa-volcano text-purple-600 text-2xl""></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg mb-1">Volcanoes</h3>
-                        <p class="text-gray-600 text-sm">Monitoring systems, evacuation plans, ash management</p>
+                        <h3 class=" font-bold text-lg mb-1">Volcanoes</h3>
+                            <p class="text-gray-600 text-sm">Monitoring systems, evacuation plans, ash management</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 7 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-indigo-100">
@@ -267,7 +211,7 @@
                         <p class="disaster-type-description">Prevention systems, risk mapping, rescue training</p>
                     </div>
                 </div>
-                
+
                 <!-- Disaster Type 8 -->
                 <div class="disaster-type-card">
                     <div class="disaster-type-icon-container bg-orange-100">
@@ -288,8 +232,9 @@
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
                     <h2 class="section-title text-gray-800">Emergency Resources</h2>
-                    <p class="text-lg text-gray-700 mb-8">If you're currently experiencing a natural disaster, these resources can provide immediate assistance and guidance.</p>
-                    
+                    <p class="text-lg text-gray-700 mb-8">If you're currently experiencing a natural disaster, these
+                        resources can provide immediate assistance and guidance.</p>
+
                     <div class="space-y-4">
                         <a href="#" class="emergency-btn flex items-center transition duration-300">
                             <i class="emergency-button-icon fas fa-phone-alt"></i>
@@ -298,7 +243,7 @@
                                 <div class="emergency-button-subtext">Immediate assistance contacts</div>
                             </div>
                         </a>
-                        
+
                         <a href="#" class="secondary-button">
                             <i class="secondary-button-icon fas fa-map-marked-alt text-blue-600"></i>
                             <div>
@@ -306,7 +251,7 @@
                                 <div class="emergency-button-subtext">Find safe paths in your area</div>
                             </div>
                         </a>
-                        
+
                         <a href="#" class="secondary-button">
                             <i class="secondary-button-icon fas fa-first-aid text-red-600"></i>
                             <div>
@@ -314,7 +259,7 @@
                                 <div class="emergency-button-subtext">Emergency medical procedures</div>
                             </div>
                         </a>
-                        
+
                         <a href="#" class="secondary-button">
                             <i class="secondary-button-icon fas fa-utensils text-green-600"></i>
                             <div>
@@ -324,7 +269,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-1/2">
                     <div class="alert-card">
                         <h3 class="alert-title">Active Disaster Alerts</h3>
@@ -338,9 +283,10 @@
                                     </div>
                                     <span class="alert-status">Active</span>
                                 </div>
-                                <p class="alert-item-description">Category 3 hurricane expected to make landfall within 24 hours.</p>
+                                <p class="alert-item-description">Category 3 hurricane expected to make landfall within
+                                    24 hours.</p>
                             </div>
-                            
+
                             <!-- Alert 2 -->
                             <div class="alert-item border-l-4 border-orange-500">
                                 <div class="flex justify-between items-start">
@@ -350,9 +296,10 @@
                                     </div>
                                     <span class="alert-status bg-orange-100 text-orange-800">Monitoring</span>
                                 </div>
-                                <p class="alert-item-description">Multiple wildfires spreading due to dry conditions.</p>
+                                <p class="alert-item-description">Multiple wildfires spreading due to dry conditions.
+                                </p>
                             </div>
-                            
+
                             <!-- Alert 3 -->
                             <div class="alert-item border-l-4 border-yellow-500">
                                 <div class="flex justify-between items-start">
@@ -362,10 +309,11 @@
                                     </div>
                                     <span class="alert-status bg-yellow-100 text-yellow-800">Advisory</span>
                                 </div>
-                                <p class="alert-item-description">Heavy rainfall may cause river flooding in the next 48 hours.</p>
+                                <p class="alert-item-description">Heavy rainfall may cause river flooding in the next 48
+                                    hours.</p>
                             </div>
                         </div>
-                        
+
                         <div class="mt-6">
                             <div class="map-container">
                                 <div class="text-center p-4">
@@ -387,7 +335,7 @@
                 <h2 class="section-title">Preparedness Resources</h2>
                 <p class="section-description">Educational materials to help you prepare before disaster strikes.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Resource 1 -->
                 <div class="resource-card">
@@ -396,7 +344,8 @@
                     </div>
                     <div class="resource-content">
                         <h3 class="resource-title">Disaster Preparedness Guides</h3>
-                        <p class="resource-description">Comprehensive manuals for different disaster scenarios with checklists and action plans.</p>
+                        <p class="resource-description">Comprehensive manuals for different disaster scenarios with
+                            checklists and action plans.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="resource-tag bg-blue-100 text-blue-800">PDF</span>
                             <span class="resource-tag bg-blue-100 text-blue-800">Printable</span>
@@ -404,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Resource 2 -->
                 <div class="resource-card">
                     <div class="resource-icon-container bg-green-50">
@@ -412,7 +361,8 @@
                     </div>
                     <div class="resource-content">
                         <h3 class="resource-title">Training Videos</h3>
-                        <p class="resource-description">Step-by-step instructional videos for emergency procedures and survival skills.</p>
+                        <p class="resource-description">Step-by-step instructional videos for emergency procedures and
+                            survival skills.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="resource-tag bg-green-100 text-green-800">Video</span>
                             <span class="resource-tag bg-green-100 text-green-800">Tutorial</span>
@@ -420,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Resource 3 -->
                 <div class="resource-card">
                     <div class="resource-icon-container bg-purple-50">
@@ -428,7 +378,8 @@
                     </div>
                     <div class="resource-content">
                         <h3 class="resource-title">Mobile Apps</h3>
-                        <p class="resource-description">Download our apps for real-time alerts, emergency tools, and offline resources.</p>
+                        <p class="resource-description">Download our apps for real-time alerts, emergency tools, and
+                            offline resources.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="resource-tag bg-purple-100 text-purple-800">iOS</span>
                             <span class="resource-tag bg-purple-100 text-purple-800">Android</span>
@@ -437,9 +388,10 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="mt-12 text-center">
-                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+                <a href="#"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
                     View All Resources
                 </a>
             </div>
@@ -451,15 +403,17 @@
         <div class="container px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="newsletter-title">Stay Informed</h2>
-                <p class="newsletter-description">Subscribe to receive disaster alerts, preparedness tips, and updates from our experts.</p>
-                
+                <p class="newsletter-description">Subscribe to receive disaster alerts, preparedness tips, and updates
+                    from our experts.</p>
+
                 <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
-                    <input type="email" placeholder="Your email address" class="newsletter-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Your email address"
+                        class="newsletter-input focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <button type="submit" class="newsletter-button">
                         Subscribe
                     </button>
                 </form>
-                
+
                 <p class="newsletter-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
             </div>
         </div>
@@ -475,7 +429,8 @@
                         <i class="footer-icon fas fa-shield-alt text-2xl mr-2"></i>
                         <span class="text-xl font-bold">GUARDIAN</span>
                     </div>
-                    <p class="text-gray-400 mb-4">Providing innovative solutions for natural disaster prevention, preparedness, and recovery worldwide.</p>
+                    <p class="text-gray-400 mb-4">Providing innovative solutions for natural disaster prevention,
+                        preparedness, and recovery worldwide.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
@@ -483,7 +438,7 @@
                         <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <!-- Column 2 -->
                 <div>
                     <h3 class="footer-column-title">Quick Links</h3>
@@ -495,7 +450,7 @@
                         <li><a href="#" class="footer-link">Get Involved</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 3 -->
                 <div>
                     <h3 class="footer-column-title">Resources</h3>
@@ -507,7 +462,7 @@
                         <li><a href="#" class="footer-link">FAQ</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 4 -->
                 <div>
                     <h3 class="footer-column-title">Contact Us</h3>
@@ -527,10 +482,11 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-divider">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="footer-copyright mb-4 md:mb-0">© 2023 Guardian Disaster Solutions. All rights reserved.</p>
+                    <p class="footer-copyright mb-4 md:mb-0">© 2023 Guardian Disaster Solutions. All rights reserved.
+                    </p>
                     <div class="flex space-x-6">
                         <a href="#" class="footer-legal-link">Privacy Policy</a>
                         <a href="#" class="footer-legal-link">Terms of Service</a>
@@ -549,4 +505,5 @@
     <script src="../scripts/index.js"></script>
 
 </body>
+
 </html>

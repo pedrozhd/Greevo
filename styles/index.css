@@ -1,4 +1,24 @@
         /* Base Styles */
+        :root {
+            --color-primary: #036110cc;
+            /* Verde principal (botões, destaques) */
+            --color-primary-dark: #3cb36a;
+            /* Verde escuro (fundos, hovers) */
+            --color-accent: #dc2626;
+            /* Vermelho de alerta (emergências) */
+            --color-neutral: #f9fafb;
+            /* Cinza claro (fundos neutros) */
+            --color-text: #374151;
+            /* Cinza escuro (texto principal) */
+            --color-white: #ffffff;
+            /* Branco */
+        }
+
+        :root {
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: #f9fafb;
@@ -7,6 +27,192 @@
             line-height: 1.5;
             color: #374151;
         }
+
+        .banner-emergencia {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            background-color: var(--color-accent);
+        }
+
+        
+        .mensagem-emergencia h2 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            padding: 0px 20px;
+            margin-left: 50px;
+            text-transform: uppercase;
+            color: var(--color-white);
+
+        }
+
+        .link-emergencia a {
+            color: var(--color-white);
+            margin-right: 40px;
+            
+
+        }
+
+        /*FIM DA MENSAGEM DE ALERTA /*
+
+        /*INÍCIO DO NAV */
+
+        .container-menu {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            margin: 0px;
+        }
+
+        .menu-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-logo img {
+            height: 75px;
+            width: 75px;
+            margin-left: 70px;
+            
+        }
+        .menu-link {
+            margin-right: 30px;
+            
+        }
+
+        .menu-lista {
+            display: flex;
+            gap: 50px;
+            
+        }
+
+        .menu-lista a, li {
+            text-decoration: none;
+            list-style-type: none;
+            font-weight: 500;
+            font-size: 0.98rem;
+            color: rgb(82, 81, 81);
+
+        }
+
+        .menu-lista a {
+            transition: all 0.3s ease;
+
+        }
+        .menu-lista a:hover {
+            color: var(--color-primary);
+
+            text-decoration: none;
+
+        }
+
+        /*FIM DO NAV */
+
+        /*INÍCIO DO HOME */
+
+        .container-home {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            padding: 70px 200px;
+            background-color: var(--color-primary);
+        }
+
+        .home-texto {
+            color: var(--color-white);
+        }
+
+        .home-texto h1 {
+            font-size: 2.70rem;
+            line-height: 45px;
+        }
+
+        .home-texto p {
+            font-size: 1.10rem;
+            font-weight: 600;
+            max-width: 80%;
+        }
+
+        .container-home img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+            
+        }
+
+        .home-btn {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .home-btn button {
+            padding: 25px 40px;
+            border-radius: 10px;
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            background-color: var(--color-white);
+            border: none;
+
+
+
+        }
+
+        /*FIM DO HOME */
+        
+        
+        /*ESTATISTICA DO HOME */
+
+        .container-estatistica {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            padding: 20px;
+            gap: 50px;
+            background-color: var(--color-neutral);
+
+
+        }
+        
+        .estatistica-item {
+            background-color: var(--color-white);
+            line-height: 5px;
+            box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 5px 70px;
+
+        }
+
+        .estatistica-item h3 {
+            font-size: 1.98rem;
+            text-align: center;
+            color: var(--color-primary);
+            
+        }
+
+        .estatistica-item p {
+            font-size: 0.98rem;
+            padding: 0px;
+            text-align: center;
+            color: #374151;
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
         .container {
             width: 100%;
@@ -321,9 +527,11 @@
             0% {
                 box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
             }
+
             70% {
                 box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
             }
+
             100% {
                 box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
             }
@@ -846,19 +1054,19 @@
             .md\:flex {
                 display: flex;
             }
-            
+
             .md\:hidden {
                 display: none;
             }
-            
+
             .md\:grid-cols-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
-            
+
             .md\:grid-cols-3 {
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
-            
+
             .md\:grid-cols-4 {
                 grid-template-columns: repeat(4, minmax(0, 1fr));
             }
@@ -868,15 +1076,15 @@
             .lg\:flex-row {
                 flex-direction: row;
             }
-            
+
             .lg\:grid-cols-4 {
                 grid-template-columns: repeat(4, minmax(0, 1fr));
             }
-            
+
             .lg\:w-1\/2 {
                 width: 50%;
             }
-            
+
             .lg\:pr-10 {
                 padding-right: 2.5rem;
             }
@@ -888,6 +1096,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
