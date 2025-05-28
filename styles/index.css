@@ -118,12 +118,12 @@ body {
     background-color: var(--color-primary);
 }
 
-.video {
+.banner-home {
     width: 50%;
     height: auto;
 }
 
-.container-home video {
+.container-home img {
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -135,8 +135,8 @@ body {
         display: block;
     }
 
-    .video {
-        margin: 50px auto;
+    .banner-home {
+        margin: 50px auto 100px auto;
         width: 500px;
         height: 200px;
     }
@@ -216,18 +216,6 @@ body {
     color: #374151;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container {
     width: 100%;
