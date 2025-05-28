@@ -114,8 +114,32 @@ body {
     display: flex;
     align-items: center;
     gap: 80px;
-    padding: 70px 200px;
+    padding: 70px 100px;
     background-color: var(--color-primary);
+}
+
+.video {
+    width: 50%;
+    height: auto;
+}
+
+.container-home video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 991px) {
+    .container-home {
+        display: block;
+    }
+
+    .video {
+        margin: 50px auto;
+        width: 500px;
+        height: 200px;
+    }
 }
 
 .home-texto {
@@ -131,14 +155,6 @@ body {
     font-size: 1.10rem;
     font-weight: 600;
     max-width: 80%;
-}
-
-.container-home img {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    
 }
 
 .home-btn {

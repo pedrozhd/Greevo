@@ -149,7 +149,7 @@ li:hover::after {
 .container-solucao {
   width: auto;
   min-height: 100vh;
-  background-image: url('../../Images/img-sobre.jpg');
+  background-image: url('../../assets/pexels-yelenaodintsova-6390698.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
