@@ -1,0 +1,49 @@
+:root {
+    --branco: #FFFFFF;
+    --verde: #036110cc;
+    --offWhite: #F2F2F2;
+    --poppins: 'Poppins', sans-serif;
+    --verdeMenu: #3cb36a;
+    --cinza: #374151;
+}
+
+main {
+    padding-top: 02px;
+    align-items: center;
+    margin: 2px 20px;
+}
+header h1 a {
+    margin: 0;
+    text-transform: uppercase;
+    color: #000000;
+}
+ 
+
+.telemedicina {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.333);
+    margin-top: 50px;
+}
+
+.button__solucao {
+    padding: 10px;
+    border: none;
+    background-color: var(--verde);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button__solucao a {
+    text-decoration: none;
+    color: white;
+}
+
+.button__solucao:hover {
+    background-color: var(--verdeMenu);
+}
