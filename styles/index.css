@@ -315,17 +315,93 @@
 
         /*INIÍCIO DESASTRES */
 
-        .desastre-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
-            gap: 20px;
+        .container-desastre {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+}
 
-        }
+.desastre-texto {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-        .desastre-card {
-            display: flex;
-            gap: 10px;
-        }
+.desastre-texto h1 {
+  font-size: 2.2rem;
+  color: #111827;
+}
+
+.desastre-texto p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.desastre-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 20px;
+}
+
+.desastre-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.desastre-card:hover {
+  transform: translateY(-4px);
+}
+
+.desastre-card img {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 16px;
+  background-color: #e5e7eb; /* cor neutra padrão, você pode alterar nas específicas abaixo */
+}
+
+.texto-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #111827;
+}
+
+.texto-card p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+  color: #4b5563;
+}
+
+.icon-flood {
+     background-color: #3f6391ee;
+     color: #036110cc;
+     }
+.icon-fire {
+     background-color: #fee2e2; 
+    }
+.icon-hurricane { 
+    background-color: #fef9c3;
+ }
+.icon-earthquake {
+     background-color: #e0e7ff; 
+    }
+.icon-drought { 
+    background-color: #d1fae5; 
+}
+.icon-volcano {
+     background-color: #ede9fe;
+     }
+.icon-avalanche {
+     background-color: #e0f2fe;
+     }
+.icon-tsunami { 
+    background-color: #fef3c7;
+ }
 
 
 
