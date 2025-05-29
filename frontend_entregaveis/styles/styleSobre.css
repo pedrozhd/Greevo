@@ -47,7 +47,6 @@ header h1 a {
     color: #000000;
 }
  
- 
 aside {
     align-items: center;
     padding-right: 50px;
@@ -159,7 +158,6 @@ main {
 .texto h4 {
   color: var(--verde);
   font-size: 20px;
-  text-transform: uppercase;
   margin: 0 0 5px;
 }
 
@@ -175,6 +173,45 @@ main {
   color: var(--verdeMenu);
   text-decoration: underline;
   font-size: 14px;
+}
+
+.container_texto_baixo {
+    margin: 40px 40px 0px 40px;
+}
+
+.texto_baixo {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.texto_baixo p {
+    padding: 1px;
+}
+
+span {
+    color: var(--verde);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+ul.lista_missao {
+    list-style-type: circle;
+}
+
+li.item_missao {
+    color: #000000;
+}
+
+.item_missao:hover {
+    color: #000000;
+}
+
+.item_missao::after {
+    display: none;
+}
+
+i {
+    color: var(--cinza);
 }
 
 footer {

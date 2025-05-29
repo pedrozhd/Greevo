@@ -50,7 +50,7 @@ aside {
     align-items: center;
 }
  
-aside ul {
+aside .lista_cabecalho {
     display: flex;
     justify-content: right;
     list-style: none;
