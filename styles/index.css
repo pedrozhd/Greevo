@@ -113,42 +113,58 @@
         /*FIM DO NAV */
 
         /*INÍCIO DO HOME */
-
         .container-home {
+            position: relative;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 80px;
+            text-align: center;
+            gap: 40px;
             padding: 70px 200px;
-            background-color: var(--color-primary);
+            height: 100vh;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .container-home::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(../assets/imagem\ oceanoo.webp);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.9;
+            z-index: -1;
         }
 
         .home-texto {
             color: var(--color-white);
+            max-width: 700px;
         }
 
         .home-texto h1 {
-            font-size: 2.70rem;
+            font-size: 2.7rem;
             line-height: 45px;
+            margin-bottom: 20px;
         }
 
         .home-texto p {
-            font-size: 1.10rem;
+            font-size: 1.1rem;
             font-weight: 600;
-            max-width: 80%;
+            margin-bottom: 30px;
         }
 
         .container-home img {
             max-width: 50%;
             height: auto;
-            display: block;
             border-radius: 20px;
-
         }
 
         .home-btn {
             display: flex;
             gap: 40px;
-            align-items: center;
+            justify-content: center;
         }
 
         .home-btn button {
@@ -159,9 +175,7 @@
             color: var(--color-primary);
             background-color: var(--color-white);
             border: none;
-
-
-
+            cursor: pointer;
         }
 
         /*FIM DO HOME */
@@ -212,6 +226,7 @@
         .container-solucao {
             padding: 60px 20px;
             text-align: center;
+            background-color: var(--color-white);
         }
 
         .solucao-texto h1 {
@@ -261,13 +276,13 @@
 
         .card-2>div:first-child {
             background-color: #dbeafe;
-            
+
             padding: 30px;
         }
 
         .card-3>div:first-child {
             background-color: #fef3c7;
-            
+
             padding: 30px;
         }
 
@@ -316,92 +331,258 @@
         /*INIÍCIO DESASTRES */
 
         .container-desastre {
-  padding: 40px 20px;
-  background-color: #f9fafb;
+            padding: 40px 20px;
+            background-color: #f9fafb;
+        }
+
+        .desastre-texto {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .desastre-texto h1 {
+            font-size: 2.2rem;
+            color: #111827;
+        }
+
+        .desastre-texto p {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        .desastre-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .desastre-card {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .desastre-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .desastre-card img {
+            width: 48px;
+            height: 48px;
+            padding: 8px;
+            border-radius: 10px;
+            margin-right: 16px;
+            background-color: #e5e7eb;
+            /* cor neutra padrão, você pode alterar nas específicas abaixo */
+        }
+
+        .texto-card h3 {
+            font-size: 1.1rem;
+            margin: 0;
+            color: #111827;
+        }
+
+        .texto-card p {
+            font-size: 0.9rem;
+            margin: 5px 0 0;
+            color: #4b5563;
+        }
+
+        .icon-flood {
+            background-color: #3f6391ee;
+            color: #036110cc;
+        }
+
+        .icon-fire {
+            background-color: #fee2e2;
+        }
+
+        .icon-hurricane {
+            background-color: #fef9c3;
+        }
+
+        .icon-earthquake {
+            background-color: #e0e7ff;
+        }
+
+        .icon-drought {
+            background-color: #d1fae5;
+        }
+
+        .icon-volcano {
+            background-color: #ede9fe;
+        }
+
+        .icon-avalanche {
+            background-color: #e0f2fe;
+        }
+
+        .icon-tsunami {
+            background-color: #fef3c7;
+        }
+
+
+        /*FIM /*/
+
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fef2f2;
+  color: #333;
 }
 
-.desastre-texto {
-  text-align: center;
-  margin-bottom: 40px;
+.secao-emergencia {
+  padding: 40px;
 }
 
-.desastre-texto h1 {
-  font-size: 2.2rem;
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coluna-esquerda, .coluna-direita {
+  flex: 1;
+  min-width: 300px;
+}
+
+.coluna-esquerda h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.coluna-esquerda p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.botoes-emergencia .botao {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.botao.vermelho {
+  background-color: #dc2626;
+  color: white;
+}
+
+.botao.branco {
+  background-color: white;
   color: #111827;
 }
 
-.desastre-texto p {
-  font-size: 1.1rem;
+.botao i {
+  font-size: 24px;
+}
+
+.botao strong {
+  font-size: 16px;
+}
+
+.botao span {
+  display: block;
+  font-size: 13px;
   color: #6b7280;
 }
 
-.desastre-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
-  gap: 20px;
+.botao.vermelho:hover {
+  background-color: #b91c1c;
 }
 
-.desastre-card {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 16px 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
+.azul {
+  color: #2563eb;
 }
 
-.desastre-card:hover {
-  transform: translateY(-4px);
+.verde {
+  color: #16a34a;
 }
 
-.desastre-card img {
-  width: 48px;
-  height: 48px;
-  padding: 8px;
-  border-radius: 10px;
-  margin-right: 16px;
-  background-color: #e5e7eb; /* cor neutra padrão, você pode alterar nas específicas abaixo */
+.vermelho {
+  color: #dc2626;
 }
 
-.texto-card h3 {
-  font-size: 1.1rem;
+/* Alertas */
+
+.coluna-direita h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.alerta {
+  border-left: 5px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 5px;
+}
+
+.alerta h4 {
   margin: 0;
-  color: #111827;
+  font-size: 16px;
 }
 
-.texto-card p {
-  font-size: 0.9rem;
-  margin: 5px 0 0;
-  color: #4b5563;
+.alerta p {
+  margin: 4px 0;
+  font-size: 14px;
 }
 
-.icon-flood {
-     background-color: #3f6391ee;
-     color: #036110cc;
-     }
-.icon-fire {
-     background-color: #fee2e2; 
-    }
-.icon-hurricane { 
-    background-color: #fef9c3;
- }
-.icon-earthquake {
-     background-color: #e0e7ff; 
-    }
-.icon-drought { 
-    background-color: #d1fae5; 
+.alerta span {
+  font-size: 13px;
+  color: #555;
 }
-.icon-volcano {
-     background-color: #ede9fe;
-     }
-.icon-avalanche {
-     background-color: #e0f2fe;
-     }
-.icon-tsunami { 
-    background-color: #fef3c7;
- }
+
+.alerta .status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.alerta.ativo {
+  border-color: #dc2626;
+}
+
+.alerta.monitoramento {
+  border-color: #f97316;
+}
+
+.alerta.aviso {
+  border-color: #eab308;
+}
+
+.mapa {
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 30px;
+}
+
+.mapa i {
+  font-size: 40px;
+  color: #9ca3af;
+}
+
+.mapa p {
+  margin-top: 10px;
+  color: #6b7280;
+}
+
 
 
 
