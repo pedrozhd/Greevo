@@ -19,28 +19,6 @@ header h1 a {
     color: #000000;
 }
  
-
-.telemedicina {
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto_baixo_solucao {
-    margin: 20px;
-}
-
-.texto {
-    margin: 0px auto;
-    padding: 10px;
-}
-
-.imagem img {
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.333);
-    margin-top: 50px;
-}
-
 .button__solucao {
     padding: 10px;
     border: none;
@@ -56,4 +34,209 @@ header h1 a {
 
 .button__solucao:hover {
     background-color: var(--verdeMenu);
+}
+
+/*INÍCIO SOLUÇÃO*/
+
+.container-solucao {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--color-white);
+}
+
+.solucao-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.solucao-texto p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.solucao-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    width: 100%;
+    max-width: 320px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+    transform: translateY(-5px);
+}
+
+.card-1>div:first-child {
+    background-color: #d1fae5;
+    padding: 30px;
+}
+
+.card-2>div:first-child {
+    background-color: #dbeafe;
+
+    padding: 30px;
+}
+
+.card-3>div:first-child {
+    background-color: #fef3c7;
+
+    padding: 30px;
+}
+
+.card-4>div:first-child {
+    background-color: #fce7f3;
+    padding: 30px;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img,
+.card-4 img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-1 h3,
+.card-2 h3,
+.card-3 h3,
+.card-4 h3 {
+    font-size: 1.2rem;
+    margin: 15px 0 5px 0;
+    color: #111827;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p,
+.card-4 p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    padding: 0 15px 20px 15px;
+}
+
+.card-1 a,
+.card-2 a,
+.card-3 a,
+.card-4 a {
+    display: block;
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 0 20px 15px;
+}
+
+/*INIÍCIO DESASTRES */
+
+.container-desastre {
+    padding: 40px 20px;
+    background-color: #f9fafb;
+}
+
+.desastre-texto {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.desastre-texto h1 {
+    font-size: 2.2rem;
+    color: #111827;
+}
+
+.desastre-texto p {
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+.desastre-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.desastre-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.desastre-card:hover {
+    transform: translateY(-4px);
+}
+
+.desastre-card img {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 16px;
+    background-color: #e5e7eb;
+    /* cor neutra padrão, você pode alterar nas específicas abaixo */
+}
+
+.texto-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #111827;
+}
+
+.texto-card p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    color: #4b5563;
+}
+
+.icon-flood {
+    background-color: #3f6391ee;
+    color: #036110cc;
+}
+
+.icon-fire {
+    background-color: #fee2e2;
+}
+
+.icon-hurricane {
+    background-color: #fef9c3;
+}
+
+.icon-earthquake {
+    background-color: #e0e7ff;
+}
+
+.icon-drought {
+    background-color: #d1fae5;
+}
+
+.icon-volcano {
+    background-color: #ede9fe;
+}
+
+.icon-avalanche {
+    background-color: #e0f2fe;
+}
+
+.icon-tsunami {
+    background-color: #fef3c7;
 }
