@@ -45,6 +45,10 @@ main > p {
     text-align: justify;
 }
 
+ul.lista_missao {
+    list-style-type: circle;
+}
+
 footer {
     margin-top: 0px;
 }

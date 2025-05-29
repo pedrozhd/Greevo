@@ -11,6 +11,7 @@ main {
     padding-top: 100px;
     align-items: center;
     margin: 2px 20px;
+    flex-direction: column;
 }
 header h1 a {
     margin: 0;
@@ -24,6 +25,15 @@ header h1 a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.texto_baixo_solucao {
+    margin: 20px;
+}
+
+.texto {
+    margin: 0px auto;
+    padding: 10px;
 }
 
 .imagem img {
