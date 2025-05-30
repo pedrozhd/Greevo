@@ -8,7 +8,8 @@
             /* Vermelho de alerta (emergências) */
             --color-neutral: #f9fafb;
             /* Cinza claro (fundos neutros) */
-            --color-text: #374151;
+            --verde-escuro: #163f26;
+
             /* Cinza escuro (texto principal) */
             --color-white: #ffffff;
             /* Branco */
@@ -87,10 +88,67 @@
         /*FIM DO NAV */
 
         .container-home {
+
             display: flex;
-            background-color: #3cb36a;
+            align-items: center;
+            padding: 10px 70px;
+            background: repeating-linear-gradient(0deg,
+                    #f0fdf4,
+                    /* cor de base clara */
+                    #f0fdf4 10px,
+                    #e8faec 10px,
+                    #e8faec 20px);
 
+        }
 
+        .home-texto h1 {
+            font-size: 2.9rem;
+            color: var(--verde-escuro);
+            padding: 0px 50px;
+            line-height: 45px;
+        }
 
+        .home-texto p {
+            font-size: 1.20rem;
+            color: var(--verde-escuro);
+            padding: 0px 40px 0px 20px;
+            margin-right: 20px;
+            padding: 0px 50px;
+        }
 
+        .home-btn {
+            display: flex;
+            gap: 20px;
+            padding: 0px 50px;
+
+        }
+
+        .btn-1 {
+
+            background-color: var(--color-primary);
+            padding: 15px 20px;
+            color: var(--color-white);
+            font-weight: 700;
+            border-radius: 12px;
+            border: none;
+
+        }
+
+        .btn-2 {
+
+            background-color: var(--color-white);
+            padding: 15px 20px;
+            color: var(--color-primary);
+            font-weight: 700;
+            border-radius: 12px;
+            border-color: var(--color-primary);
+
+        }
+
+        .container-home img {
+            max-width: 100%;
+            height: auto;
+            flex: 1;
+            min-width: 300px;
+            margin-left: 40px;
         }
