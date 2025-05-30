@@ -28,7 +28,7 @@
             color: #374151;
         }
 
-        
+
         /*INÍCIO DO NAV */
 
         .container-menu {
@@ -88,10 +88,9 @@
 
         .container-home {
             display: flex;
+            background-color: #3cb36a;
 
 
 
 
         }
-
-        
