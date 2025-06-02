@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <!-- Navigation -->
     <nav class="container-menu">
         <div class="menu-logo">
@@ -19,8 +17,8 @@
         </div>
         <div class="menu-link">
             <ul class="menu-lista">
-                <li><a href="./index.html">Recursos</a></li>
-                <li><a href="">Como Funciona</a></li>
+                <li><a href=".container-recursos">Recursos</a></li>
+                <li><a href=".container-cadastro">Como Funciona</a></li>
                 <li><a href="">Preços</a></li>
                 <li><a href="">Contato</a></li>
                 <li><a href="../frontend_entregaveis/html/index.html" target="_blank">About</a></li>
@@ -34,17 +32,22 @@
                 Gestão de Abrigos de Situações de Emergência
             </h1>
             <p>
-                Solução tecnológica para que a Defesa Civil possa cadastrar, gerenciar e otimizar abrigos de refúgio
-                durante desastres naturais, salvando vidas e recursos
+                Solução tecnológica para cadastrar, gerenciar e otimizar abrigos de refúgio
+                durante desastres naturais.
             </p>
             <div class="home-btn">
                 <button class="btn-1">Começar agora</button>
                 <button class="btn-2">Saiba mais</button>
             </div>
         </div>
-        <img src="../assets/Código.png" alt="">
-
+        <img src="../assets/Código.png" alt="Imagem de código de requisição">
     </section>
+
+    <!--Chatbot-->
+    <button id="chatbot-button" class="chatbot-button"><img src="../assets/assistente-icon.png" alt="Greevo Assistant" width="35px"></button>
+    <div id="chatbot-container">
+        <!--Chat Renderizado-->
+    </div>
 
     <section class="container-desastres">
         <div>
@@ -118,7 +121,7 @@
 
     </section>
 
-
+    <script src="../scripts/chatbot.js"></script>
 </body>
 
 </html>
