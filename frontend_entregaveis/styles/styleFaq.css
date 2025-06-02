@@ -9,7 +9,6 @@
 
 body {
     padding-top: 50px;
-    padding-bottom: 0px;
 }
 
 main {
@@ -26,7 +25,12 @@ header h1 a {
     text-transform: uppercase;
     color: #000000;
 }
- 
+
+.container__questions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+} 
 
 .container__faq {
     padding-top: 20px;
@@ -35,10 +39,12 @@ header h1 a {
 
 main > h2 {
     color: var(--verde);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-main > h4 {
-    padding-bottom: 3px;
+h3 {
+    text-align: center;
 }
 
 main > p {
@@ -47,8 +53,4 @@ main > p {
 
 ul.lista_missao {
     list-style-type: circle;
-}
-
-footer {
-    margin-top: 0px;
 }

@@ -7,12 +7,10 @@
     --cinza: #374151;
 }
 
-main {
-    padding-top: 100px;
-    align-items: center;
-    margin: 2px 20px;
-    flex-direction: column;
+body {
+    padding-top: 70px;
 }
+
 header h1 a {
     margin: 0;
     text-transform: uppercase;
@@ -39,19 +37,29 @@ header h1 a {
 /*INÍCIO SOLUÇÃO*/
 
 .container-solucao {
+    background-image: url('../../assets/imagem\ oceanoo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 60px 20px;
     text-align: center;
     background-color: var(--color-white);
 }
 
+.container-solucao:hover {
+    transition: 0.5s;
+  transform: translateY(-5px);
+}
+
 .solucao-texto h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: var(--branco);
 }
 
 .solucao-texto p {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--branco);
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
@@ -239,4 +247,33 @@ header h1 a {
 
 .icon-tsunami {
     background-color: #fef3c7;
+}
+
+.container__button__solution {
+    margin: 30px 50px;
+}
+
+.button__solution {
+    display: block;
+    margin: 0px auto;
+    border: none;
+    background-color: var(--verde);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.button__solution:hover {
+    background-color: var(--verdeMenu);
+    border: 2px solid var(--verde);
+    transition: 0.2s;
+
+    .solution__page {
+        color: var(--verde);
+        font-weight: bolder;
+    }
+}
+
+.solution__page {
+    color: white;
+    font-weight: bold;
 }
