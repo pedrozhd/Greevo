@@ -94,7 +94,12 @@ li {
             #f0fdf4 10px,
             #e8faec 10px,
             #e8faec 20px);
+    background-image: url(../assets/ondas.png);
     height: 700px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.06);
+    
 }
 
 .home-texto {
@@ -102,14 +107,15 @@ li {
 }
 
 .home-texto h1 {
-    font-size: 2.9rem;
+    font-size: 3.5rem;
     color: var(--verde-escuro);
     padding: 0px 50px;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 .home-texto p {
     font-size: 1.20rem;
+    font-weight: 700;
     color: var(--verde-escuro);
     padding: 0px 40px 0px 20px;
     margin-right: 20px;
@@ -146,7 +152,8 @@ li {
     height: auto;
     flex: 1;
     min-width: 300px;
-    margin-left: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
 }
 
 /* Configs Chatbot */
@@ -197,7 +204,9 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .titulo-desastre {
@@ -211,9 +220,9 @@ li {
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    
+
     margin-bottom: 10px;
-    
+
 
 }
 
@@ -227,7 +236,8 @@ li {
     border-radius: 10px;
     width: 70px;
     height: 90px;
-    
+    margin-bottom: 30px;
+
 
 }
 
@@ -241,10 +251,10 @@ li {
 
 .desastre-item p {
     padding: 0px 0px;
-    
-    
-    
-    
+
+
+
+
 
 }
 
@@ -257,13 +267,15 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e9f9f0; /* cor de fundo suave */
+    background-color: #e9f9f0;
+    /* cor de fundo suave */
     padding: 40px 20px;
 }
 
 .recurso-texto {
     text-align: center;
-    color: #0c3f26; /* verde escuro */
+    color: #0c3f26;
+    /* verde escuro */
     margin-bottom: 30px;
 }
 
@@ -278,7 +290,7 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    
+
     width: 100%;
     max-width: 1100px;
 }
@@ -410,6 +422,7 @@ li {
 .card-texto button:hover {
     background-color: #14532d;
 }
+
 /*cadastro*/
 .container-cadastro {
     padding: 60px 20px;
