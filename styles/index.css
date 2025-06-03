@@ -414,7 +414,7 @@ li {
 
 .cadastro-texto h1 {
     font-size: 1.8rem;
-    color: #14532d;
+    color: var(--verde-escuro);
     margin-bottom: 10px;
 }
 
