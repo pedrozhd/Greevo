@@ -1,37 +1,28 @@
- window.watsonAssistantChatOptions = {
-        integrationID: "SEU_ASSISTANT_ID", // Substitua pelo seu Assistant ID
-        region: "us-south",
-        serviceInstanceID: "SEU_SERVICE_INSTANCE_ID", // Opcional para plano Lite
-        onLoad: function(instance) { 
-            instance.render(); 
-            document.getElementById('chatbot-container').style.display = 'block';
-        }
-    };
+window.watsonAssistantChatOptions = {
+    integrationID: "87419f84-9625-4d74-a6fb-9c392a61b142",
+    region: "au-syd",
+    serviceInstanceID: "1f65f2c1-f96c-4614-96ca-e1a88a2f2749",
     
-    setTimeout(function(){
-        const t=document.createElement('script');
-        t.src='https://web-chat.global.assistant.watson.appdomain.cloud/versions/' + 
-             (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
-             '/WatsonAssistantChatEntry.js';
-        document.head.appendChild(t);
-    });
-
-
-document.getElementById('chatbot-button').addEventListener('click', function() {
-
-    this.classList.add('borda');
-    timeoutId = setTimeout(() => {
-        this.classList.remove('borda');
-    }, 500);
-
-    const container = document.getElementById('chatbot-container');
     
-    if (container.style.display === 'block') {
-        container.style.display = 'none';
-    } else {
-        if (!window.watsonAssistantChatLoaded) {
-            window.watsonAssistantChatLoaded = true;
-        }
-        container.style.display = 'block';
+    theme: {
+        primary: '#2E8B57',
+        secondary: '#FFFFFF',
+        background: '#F5F5F5',
+        headerBackground: '#2E8B57',
+        launcherBackground: '#2E8B57'
+    },
+    
+    // Configurações de comportamento
+    showLauncher: true,           // Mantém o botão padrão visível
+    openChatByDefault: false,     // Não abre automaticamente
+    onLoad: function(instance) {
+        instance.render();
     }
+};
+
+// Carrega o script do Watson
+setTimeout(function(){
+    const t=document.createElement('script');
+    t.src='https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js';
+    document.head.appendChild(t);
 });

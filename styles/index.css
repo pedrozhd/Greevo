@@ -146,31 +146,6 @@ li {
 }
 
 /* Configs Chatbot */
-.chatbot-button {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    padding: 10px 12px 10px 12px;
-    background-color: var(--color-white);
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    align-items: center;
-}
-
-.chatbot-button:hover {
-    transform: scale(1.05);
-}
-
-.borda {
-    border: 1px solid var(--color-primary);
-}
-
 #chatbot-container {
     display: none;
     position: fixed;
