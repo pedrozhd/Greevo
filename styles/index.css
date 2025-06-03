@@ -126,8 +126,10 @@ li {
     display: flex;
     gap: 20px;
     padding: 0px 50px;
+    transition: transform 0.2s ease;
 
 }
+
 
 .btn-1 {
     background-color: var(--color-primary);
@@ -136,7 +138,16 @@ li {
     font-weight: 700;
     border-radius: 15px;
     border: none;
+    transition: transform 0.1s ease;
 }
+
+.btn-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+
 
 .btn-2 {
     background-color: var(--color-white);
@@ -145,6 +156,12 @@ li {
     font-weight: 700;
     border-radius: 15px;
     border-color: var(--color-primary);
+    transition: transform 0.2s ease;
+}
+
+.btn-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .container-home img {
