@@ -523,3 +523,164 @@ li {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1044px) {
+    .container-home {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .home-texto {
+        padding: 0;
+    }
+
+    .home-texto h1,
+    .home-texto p {
+        padding: 0 20px;
+    }
+
+    .home-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .container-home img {
+        display: none; /* Remoção da imagem como solicitado */
+    }
+
+    .menu-logo img {
+        margin-left: 20px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .menu-lista {
+        gap: 20px;
+    }
+
+    .texto-desastres {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5px;
+    }
+
+    .desastre-item {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .cadastro-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .container-cadastro { 
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-imagem img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titulo-desastre {
+        text-align: center;
+        
+    }
+    .container-menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-link {
+        margin: 10px 0;
+    }
+
+    .container-assinatura {
+        padding: 30px 10px;
+       
+    }
+    .assinatura-card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        
+
+    }
+
+    
+
+    .card {
+        
+        margin: 0 auto;
+        
+    }
+
+    .card div {
+        margin: 0 auto;
+        
+    }
+
+    .container-cadastro { 
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container-imagem img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+
+    .recurso-texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-texto h1 {
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+
+    .home-texto p {
+        font-size: 1rem;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .chatbot-button {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    #chatbot-container {
+        width: 90%;
+        right: 5%;
+    }
+}
+
+
+
