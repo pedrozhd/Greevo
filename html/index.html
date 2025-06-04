@@ -15,15 +15,21 @@
         <div class="menu-logo">
             <img src="../assets/greevo-logo-sem-fundo.png" alt="Greevo">
         </div>
-        <div class="menu-link">
-            <ul class="menu-lista">
-                <li><a href="#container-recursos">Recursos</a></li>
-                <li><a href="#container-cadastro">Como Funciona</a></li>
-                <li><a href="">Preços</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="../frontend_entregaveis/html/index.html" target="_blank">Sobre</a></li>
-            </ul>
+        <div class="menuOverlay">
+            <div class="menu-link">
+                <ul class="menu-lista">
+                    <li class="item__lista__menu"><a href="#container-recursos">Recursos</a></li>
+                    <li class="item__lista__menu"><a href="#container-cadastro">Como Funciona</a></li>
+                    <li class="item__lista__menu"><a href="#container-assinatura">Preços</a></li>
+                    <li class="item__lista__menu"><a href="../frontend_entregaveis/html/index.html#contato" target="_blank">Contato</a></li>
+                    <li class="item__lista__menu"><a href="../frontend_entregaveis/html/index.html" target="_blank">Sobre</a></li>
+                </ul>
+            </div>
+            <button class="closeMenu">
+                <img src="../frontend_entregaveis/assets/close.png" alt="imagem close menu" width="25px" height="25px">
+            </button>
         </div>
+        <img src="../frontend_entregaveis/assets/Menu (1).png" alt="menu hamburguer" class="menuHamburguer" width="35px">
     </nav>
 
     <section class="container-home">
@@ -103,21 +109,11 @@
                 <p>Notificações automáticas para autoridades e população sobre abertura de novos abrigos e situações
                     críticas.</p>
             </div>
-            <div>
-                <img src="../assets/Iconoir-Team-Iconoir-Dashboard-speed.48.png" alt="">
-                <h2>Relatórios Analíticos</h2>
-                <p>Gere relatórios detalhados para melhorar a preparação e resposta a futuros desastres.</p>
-            </div>
-            <div>
-                <img src="../assets/Icons8-Ios7-Mobile-Phone-1.48.png" alt="">
-                <h2>Aplicativo Móvel</h2>
-                <p>Acesso via aplicativo para cadastro rápido de abrigos mesmo em áreas com conexão limitada.</p>
-            </div>
         </div>
     </section>
 
 
-    <section class="container-assinatura">
+    <section id="container-assinatura" class="container-assinatura">
         <div class="assinatura-titulo">
             <h1>Modelos de Contratação</h1>
             <p>Escolha o plano que melhor atende às necessidades do seu órgão público</p>
@@ -128,7 +124,7 @@
                 <div class="card-preço">
                     <h2>Assinatura Anual</h2>
                     <p></p>
-                    <h3>R$ 29,90 <span>/mês*</span></h3>
+                    <h3>R$ 00,00 <span>/mês*</span></h3>
                     <p>Cobrado anualmente</p>
                 </div>
                 <div class="card-texto">
@@ -141,10 +137,10 @@
             </div>
             <div class="card">
                 <div class="card-preço">
-                    <h2>Assinatura Anual</h2>
+                    <h2>Pagamento Por Uso</h2>
                     <p></p>
-                    <h3>R$ 29,90 <span>/mês*</span></h3>
-                    <p>Cobrado anualmente</p>
+                    <h3>R$ 00,00 <span>/uso</span></h3>
+                    <p>Cobrado por uso</p>
                 </div>
                 <div class="card-texto">
                     <p>Todos os recursos da plataforma</p>
@@ -156,10 +152,10 @@
             </div>
             <div class="card">
                 <div class="card-preço">
-                    <h2>Assinatura Anual</h2>
+                    <h2>Licenciamento</h2>
                     <p></p>
-                    <h3>R$ 29,90 <span>/mês*</span></h3>
-                    <p>Cobrado anualmente</p>
+                    <h3>R$ 00,00 <span>/mês*</span></h3>
+                    <p>Cobrado de acordo com tempo estimado de contrato</p>
                 </div>
                 <div class="card-texto">
                     <p>Todos os recursos da plataforma</p>
@@ -171,32 +167,7 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <section id="container-cadastro" class="container-cadastro">
         <div class="cadastro-texto">
@@ -207,26 +178,23 @@
         <section class="container-info">
             <div class="cadastro-informação">
                 <h2>Cadastro Rápido</h2>
-                <p>A Defesa Civil cadastra os abrigos disponíveis através de nossa API ou aplicativo móvel, incluindo
-                    localização exata, capacidade e recursos disponíveis.</p>
+                <p>A Defesa Civil cadastra os abrigos disponíveis através de nossa API, incluindo
+                    localização exata, todas rotas possíveis, capacidade e recursos disponíveis.</p>
                 <ul>
-                    <li>✔️ Cadastro em menos de 2 minutos;</li>
+                    <li>✔️ Cadastro em menos de 4 minutos;</li>
                     <li>✔️ Fotos e informações detalhadas;</li>
                     <li>✔️ Integração com sistemas existentes.</li>
                 </ul>
             </div>
             <div class="container-imagem">
-                    <img src="../assets/image.png" alt="">
+                    <img src="../assets/image.png" alt="Imagem de um concerto de peça elêtronica">
                 </figure>
-
             </div>
         </section>
     </section>
 
-    
-    
-
     <script src="../scripts/chatbot.js"></script>
+    <script src="../scripts/menuHamburguer.js"></script>
 </body>
 
 </html>
